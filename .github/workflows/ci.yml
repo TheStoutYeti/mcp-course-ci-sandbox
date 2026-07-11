@@ -13,3 +13,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Say hello
         run: echo "Sandbox CI run OK"
+      - name: Deliberate failure for webhook testing
+        run: exit 1
